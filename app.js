@@ -109,3 +109,8 @@ inquirer
         })
       };
       
+      function makeTeam() {
+        fs.writeFile(outputPath, render(employees), function (err) {
+          if (err) throw err;
+        })
+      };
